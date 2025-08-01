@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <script defer src="index.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <h1>My<span>Portfolio</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-content">
+                <!-- <p>front-end developer</p> -->
+                <h1>Hi, I'm <span>Nandinee </span> <br> Nargesh</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/n.jpg" alt="">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <p> Motivated and detail-oriented B.Tech (IT) student with strong problem-solving 
+                    skills and hands-on experience in frontend development using React.js, Next.js, 
+                    Tailwind CSS, and JavaScript. Proven ability to build responsive, user-friendly
+                     interfaces and collaborative web applications. Passionate about creating impactful digital
+                     solutions and continuously improving through structured learning and project work.</p>
+                   <div class="tab-title">
+                       <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-link" onclick="opentab('education')">Education</p>
+
+                   </div>
+                   <div class="tab-content active-content" id="skills">
+                    <ul><li>
+                        <span>Front-end Development</span><br>HTML, CSS, JS, Tailwind CSS
+                    </li>
+                    <ul><li>
+                        <span>Frameworks</span><br>React.js, Bootstrap, Next.js
+                    </li>
+                    <li>
+                        <span>Programming Languages</span><br>C|C++
+                    </li>
+                    <li>
+                        <span>Graphic Design</span><br>Adobe Illustrator, Canva
+                    </li>
+                    <li>
+                        <span>Data Structure & Algorithms</span><br>
+                    </li>
+                    </ul>
+                   </div>
+                   <div class="tab-content" id="education">
+                    <ul><li>
+                        <span>2022-2026  </span><br>B.Tech in Information Technology from JEC Jabalpur (m.p)
+                    </li>
+                    <li>
+                        <span>2020-2021</span><br>Higher Secondary(12th),CBSE, from EMRS, Kukshi Dhar (m.p) 
+                    </li>
+                    <li>
+                        <span>2018-2019</span><br>Secondary(10th),CBSE, from EMRS, Kukshi Dhar (m.p)
+                    </li>
+                    
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+
+    <div class="proj-list">
+      <!-- First 3 visible projects -->
+      <div class="proj">
+        <img src="assets/pexels-pixabay-262978.jpg" alt="">
+        <div class="layer">
+          <h3>Food Website</h3>
+          <p>You can view and order food of your choice.</p>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="proj">
+        <img src="assets/pexels-lalorosas-907489.jpg" alt="">
+        <div class="layer">
+          <h3>Temperature Converter</h3>
+          <p>Convert temperature from one unit to another.</p>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="proj">
+        <img src="assets/pexels-polina-zimmerman-3747408.jpg" alt="">
+        <div class="layer">
+          <h3>Car Landing Page</h3>
+          <p>You can rent a variety of cars.</p>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden additional projects -->
+    <div class="proj-list more-projects" style="display: none;">
+      <div class="proj">
+        <img src="assets/audio-1840195_1280.jpg" alt="">
+        <div class="layer">
+          <h3>Netflix Clone</h3>
+          <p>Clone UI of Netflix using React.</p>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="proj">
+        <img src="assets/auto-3107479_1280.jpg" alt="">
+        <div class="layer">
+          <h3>Weather App</h3>
+          <p>Check real-time weather using API.</p>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- See More button -->
+    <a href="#" class="btn" id="see-more-btn">See More</a>
+  </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> nandinee@gmail.com</p>
+                <p> <i class="fas fa-phone"></i> 91*********</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nandinee-nargesh-13731221a"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/NandineeNargesh"> <i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/nargeshnandinee/"><img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" alt="LeetCode"  width="30" style="margin-right: 15px;" ></a>
+                     
+                </div>
+                <a href="assets/Nandinee_Nargesh_Resume.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+<form action="" onsubmit="showSuccessPopup(); return false;">
+    <input type="text" name="Name" placeholder="your name" required>
+    <input type="email" name="email" placeholder="your email" required>
+<textarea name="message" rows="6" placeholder="your message "></textarea>
+<button type="submit" class="btn btn2"> Submit</button>
+<div id="success-popup" style="display: none;" class="popup">
+  <p>Sent Successfully!</p>
+</div>
+
+</form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright © 2025 Nandinee. All right reserved. </p>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
